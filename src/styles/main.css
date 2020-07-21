@@ -1,0 +1,16 @@
+@import "helpers/variables.css";
+@import "helpers/mixins.css";
+@import "helpers/functions.css";
+@import "vendor/libs.css";
+@import "base/fonts.css";
+@import "base/general.css";
+
+@import "../blocks/modules.css";
+
+
+.container{
+	display: flex;
+	width: 97%;
+	margin: 0 auto;
+	flex-wrap: wrap;
+}
