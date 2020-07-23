@@ -1,8 +1,8 @@
 :root {
   /*Colors*/
   --text-color: #333;
-  --color-primary: #A2CC44;
-  --color-primary2: #0C9F4E;
+  --light-grn: #A2CC44;
+  --grn: #0C9F4E;
   --color-dark-green: #0C8B45;;
   --color-primary--hover: #ccc;
   --color-primary--active: #ccc;

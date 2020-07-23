@@ -117,30 +117,39 @@
 
 var products = document.querySelectorAll('.product');
 products.forEach(function (product) {
-  var decrease = document.querySelector('.product-decrease');
-  var increase = document.querySelector('.product-increase');
-  var productCount = document.querySelector('.product-count').innerText;
-  var productBasket = document.querySelector('.product-basket');
+  var decrease = product.querySelector('.counter__decrease');
+  var increase = product.querySelector('.counter__increase');
+  var productCount = product.querySelector('.counter__count').value;
+  var productBasket = product.querySelector('.counter__basket');
   increase.addEventListener('click', function () {
     productCount++;
-    document.querySelector('.product-count').innerText = productCount;
+    product.querySelector('.counter__count').value = productCount;
   });
   decrease.addEventListener('click', function () {
     if (productCount === 0) {
       emptyCard();
     } else {
       productCount--;
-      document.querySelector('.product-count').innerText = productCount;
+      product.querySelector('.counter__count').value = productCount;
     }
   });
 
   function emptyCard() {
     productCount = 0;
-    document.querySelector('.product-count').innerText = productCount;
+    product.querySelector('.counter__count').value = productCount;
   }
 
   productBasket.addEventListener('click', function () {
     emptyCard();
+  });
+  var btnToggler = product.querySelectorAll('.btn--toggler');
+  btnToggler.forEach(function (btn) {
+    btn.addEventListener('click', function () {
+      btnToggler.forEach(function (btn) {
+        btn.classList.remove('btn--toggler--active');
+      });
+      btn.classList.add('btn--toggler--active');
+    });
   });
 });
 

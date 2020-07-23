@@ -27,145 +27,125 @@
     </head>
     <body>
         <div class="container">
+           <header class="header">
+	<div class="header-top">
+		<div class="header-top__container">
+			<div class="sandwich">
+		    <div class="sandwich__line sandwich__line--top"></div>
+		    <div class="sandwich__line sandwich__line--middle"></div>
+		    <div class="sandwich__line sandwich__line--bottom"></div>
+			</div>
+			<a href="#" class="logo">
+				<h4 class="logo__subtitle">торговий дом</h4>
+				<h3 class="logo__title">биллион</h3>
+			</a>
+			
+		</div>
+	</div>
+</header> 
            <div class="product">
-	<h5 class="product-title">Сосиски Ковбасний ряд Кіровоградські вар шт/о вак/упак</h5>
-	<h5 class="product-subtitle">Вовчанський МК</h5>
-	<div class="product-img__wrapper">
-		<img src="../../../img/product-img.jpg" alt="product" class="product-img">
+	<h4 class="product__title">Сосиски Ковбасний ряд Кіровоградські вар шт/о вак/упак</h4>
+	<h5 class="product__subtitle">Вовчанський МК</h5>
+	<div class="product__img-wrapper">
+		<img src="../../../img/product-img.jpg" alt="product" class="product__img">
 	</div>
-	<div class="product-description">
-		<div class="product-description__line">
-			<span class="product-key">1 кг</span>
-			<span class="product-value">84 <sup>15<sup></sup></sup></span>
+	<div class="product__description">
+		<div class="product__description-line">
+			<span class="product__key">1 кг</span>
+			<span class="product__value">84 <sup>15<sup></sup></sup></span>
 		</div>
-		<div class="product-description__line">
-			<span class="product-key">Ящик (7 уп.)</span>
-			<span class="product-value green-text">75 <sup>50<sup>
+		<div class="product__description-line">
+			<span class="product__key">Ящик (7 уп.)</span>
+			<span class="product__value green-text">75 <sup>50<sup>
 			</sup></sup></span>
-			<span class="product-multiplied">× 7 уп.</span>
-			<span class="product-price green-text">1510 <sup>00<sup></sup></sup></span>
+			<span class="product__multiplied">× 7 уп.</span>
+			<span class="product__price green-text">1510 <sup>00<sup></sup></sup></span>
 		</div>
 	</div>
-	<div class="product-footer">
-		<a href="#" class="btn">уп.</a>
-		<a href="#" class="btn btn--light-grn">Ящик</a>
-		<div class="product-counter">
-			<div class="product-decrease">-</div>
-			<div class="product-count">20</div>
-			<div class="product-increase">+</div>
-			<div class="product-basket">
-				<svg class="product-basket__img">
+	<div class="product__footer">
+		<button class="btn btn--toggler">уп.</button>
+		<button class="btn btn--toggler btn--toggler--active">Ящик</button>
+		<div class="counter">
+			<button class="counter__decrease">-</button>
+			<input type="number" class="counter__count" value="20">
+			<button class="counter__increase">+</button>
+			<button class="counter__basket">
+				<svg class="counter__basket-img">
 			    <use xlink:href="../img/sprites/sprite.svg#product-basket"></use>
 				</svg>
-			</div>
+			</button>
 		</div>
 	</div>
 </div>
 
  
            <div class="product">
-	<h5 class="product-title">Сосиски Ковбасний ряд Кіровоградські вар шт/о вак/упак</h5>
-	<h5 class="product-subtitle">Вовчанський МК</h5>
-	<div class="product-img__wrapper">
-		<img src="../../../img/product-img.jpg" alt="product" class="product-img">
+	<h4 class="product__title">Сосиски Ковбасний ряд Кіровоградські вар шт/о вак/упак</h4>
+	<h5 class="product__subtitle">Вовчанський МК</h5>
+	<div class="product__img-wrapper">
+		<img src="../../../img/product-img.jpg" alt="product" class="product__img">
 	</div>
-	<div class="product-description">
-		<div class="product-description__line">
-			<span class="product-key">1 кг</span>
-			<span class="product-value">84 <sup>15<sup></sup></sup></span>
+	<div class="product__description">
+		<div class="product__description-line">
+			<span class="product__key">1 кг</span>
+			<span class="product__value">84 <sup>15<sup></sup></sup></span>
 		</div>
-		<div class="product-description__line">
-			<span class="product-key">Ящик (7 уп.)</span>
-			<span class="product-value green-text">75 <sup>50<sup>
+		<div class="product__description-line">
+			<span class="product__key">Ящик (7 уп.)</span>
+			<span class="product__value green-text">75 <sup>50<sup>
 			</sup></sup></span>
-			<span class="product-multiplied">× 7 уп.</span>
-			<span class="product-price green-text">1510 <sup>00<sup></sup></sup></span>
+			<span class="product__multiplied">× 7 уп.</span>
+			<span class="product__price green-text">1510 <sup>00<sup></sup></sup></span>
 		</div>
 	</div>
-	<div class="product-footer">
-		<a href="#" class="btn">уп.</a>
-		<a href="#" class="btn btn--light-grn">Ящик</a>
-		<div class="product-counter">
-			<div class="product-decrease">-</div>
-			<div class="product-count">20</div>
-			<div class="product-increase">+</div>
-			<div class="product-basket">
-				<svg class="product-basket__img">
+	<div class="product__footer">
+		<button class="btn btn--toggler">уп.</button>
+		<button class="btn btn--toggler btn--toggler--active">Ящик</button>
+		<div class="counter">
+			<button class="counter__decrease">-</button>
+			<input type="number" class="counter__count" value="20">
+			<button class="counter__increase">+</button>
+			<button class="counter__basket">
+				<svg class="counter__basket-img">
 			    <use xlink:href="../img/sprites/sprite.svg#product-basket"></use>
 				</svg>
-			</div>
+			</button>
 		</div>
 	</div>
 </div>
 
  
            <div class="product">
-	<h5 class="product-title">Сосиски Ковбасний ряд Кіровоградські вар шт/о вак/упак</h5>
-	<h5 class="product-subtitle">Вовчанський МК</h5>
-	<div class="product-img__wrapper">
-		<img src="../../../img/product-img.jpg" alt="product" class="product-img">
+	<h4 class="product__title">Сосиски Ковбасний ряд Кіровоградські вар шт/о вак/упак</h4>
+	<h5 class="product__subtitle">Вовчанський МК</h5>
+	<div class="product__img-wrapper">
+		<img src="../../../img/product-img.jpg" alt="product" class="product__img">
 	</div>
-	<div class="product-description">
-		<div class="product-description__line">
-			<span class="product-key">1 кг</span>
-			<span class="product-value">84 <sup>15<sup></sup></sup></span>
+	<div class="product__description">
+		<div class="product__description-line">
+			<span class="product__key">1 кг</span>
+			<span class="product__value">84 <sup>15<sup></sup></sup></span>
 		</div>
-		<div class="product-description__line">
-			<span class="product-key">Ящик (7 уп.)</span>
-			<span class="product-value green-text">75 <sup>50<sup>
+		<div class="product__description-line">
+			<span class="product__key">Ящик (7 уп.)</span>
+			<span class="product__value green-text">75 <sup>50<sup>
 			</sup></sup></span>
-			<span class="product-multiplied">× 7 уп.</span>
-			<span class="product-price green-text">1510 <sup>00<sup></sup></sup></span>
+			<span class="product__multiplied">× 7 уп.</span>
+			<span class="product__price green-text">1510 <sup>00<sup></sup></sup></span>
 		</div>
 	</div>
-	<div class="product-footer">
-		<a href="#" class="btn">уп.</a>
-		<a href="#" class="btn btn--light-grn">Ящик</a>
-		<div class="product-counter">
-			<div class="product-decrease">-</div>
-			<div class="product-count">20</div>
-			<div class="product-increase">+</div>
-			<div class="product-basket">
-				<svg class="product-basket__img">
+	<div class="product__footer">
+		<button class="btn btn--toggler">уп.</button>
+		<button class="btn btn--toggler btn--toggler--active">Ящик</button>
+		<div class="counter">
+			<button class="counter__decrease">-</button>
+			<input type="number" class="counter__count" value="20">
+			<button class="counter__increase">+</button>
+			<button class="counter__basket">
+				<svg class="counter__basket-img">
 			    <use xlink:href="../img/sprites/sprite.svg#product-basket"></use>
 				</svg>
-			</div>
-		</div>
-	</div>
-</div>
-
- 
-           <div class="product">
-	<h5 class="product-title">Сосиски Ковбасний ряд Кіровоградські вар шт/о вак/упак</h5>
-	<h5 class="product-subtitle">Вовчанський МК</h5>
-	<div class="product-img__wrapper">
-		<img src="../../../img/product-img.jpg" alt="product" class="product-img">
-	</div>
-	<div class="product-description">
-		<div class="product-description__line">
-			<span class="product-key">1 кг</span>
-			<span class="product-value">84 <sup>15<sup></sup></sup></span>
-		</div>
-		<div class="product-description__line">
-			<span class="product-key">Ящик (7 уп.)</span>
-			<span class="product-value green-text">75 <sup>50<sup>
-			</sup></sup></span>
-			<span class="product-multiplied">× 7 уп.</span>
-			<span class="product-price green-text">1510 <sup>00<sup></sup></sup></span>
-		</div>
-	</div>
-	<div class="product-footer">
-		<a href="#" class="btn">уп.</a>
-		<a href="#" class="btn btn--light-grn">Ящик</a>
-		<div class="product-counter">
-			<div class="product-decrease">-</div>
-			<div class="product-count">20</div>
-			<div class="product-increase">+</div>
-			<div class="product-basket">
-				<svg class="product-basket__img">
-			    <use xlink:href="../img/sprites/sprite.svg#product-basket"></use>
-				</svg>
-			</div>
+			</button>
 		</div>
 	</div>
 </div>
@@ -173,36 +153,36 @@
  
         </div>
         <div class="product">
-	<h5 class="product-title">Сосиски Ковбасний ряд Кіровоградські вар шт/о вак/упак</h5>
-	<h5 class="product-subtitle">Вовчанський МК</h5>
-	<div class="product-img__wrapper">
-		<img src="../../../img/product-img.jpg" alt="product" class="product-img">
+	<h4 class="product__title">Сосиски Ковбасний ряд Кіровоградські вар шт/о вак/упак</h4>
+	<h5 class="product__subtitle">Вовчанський МК</h5>
+	<div class="product__img-wrapper">
+		<img src="../../../img/product-img.jpg" alt="product" class="product__img">
 	</div>
-	<div class="product-description">
-		<div class="product-description__line">
-			<span class="product-key">1 кг</span>
-			<span class="product-value">84 <sup>15<sup></sup></sup></span>
+	<div class="product__description">
+		<div class="product__description-line">
+			<span class="product__key">1 кг</span>
+			<span class="product__value">84 <sup>15<sup></sup></sup></span>
 		</div>
-		<div class="product-description__line">
-			<span class="product-key">Ящик (7 уп.)</span>
-			<span class="product-value green-text">75 <sup>50<sup>
+		<div class="product__description-line">
+			<span class="product__key">Ящик (7 уп.)</span>
+			<span class="product__value green-text">75 <sup>50<sup>
 			</sup></sup></span>
-			<span class="product-multiplied">× 7 уп.</span>
-			<span class="product-price green-text">1510 <sup>00<sup></sup></sup></span>
+			<span class="product__multiplied">× 7 уп.</span>
+			<span class="product__price green-text">1510 <sup>00<sup></sup></sup></span>
 		</div>
 	</div>
-	<div class="product-footer">
-		<a href="#" class="btn">уп.</a>
-		<a href="#" class="btn btn--light-grn">Ящик</a>
-		<div class="product-counter">
-			<div class="product-decrease">-</div>
-			<div class="product-count">20</div>
-			<div class="product-increase">+</div>
-			<div class="product-basket">
-				<svg class="product-basket__img">
+	<div class="product__footer">
+		<button class="btn btn--toggler">уп.</button>
+		<button class="btn btn--toggler btn--toggler--active">Ящик</button>
+		<div class="counter">
+			<button class="counter__decrease">-</button>
+			<input type="number" class="counter__count" value="20">
+			<button class="counter__increase">+</button>
+			<button class="counter__basket">
+				<svg class="counter__basket-img">
 			    <use xlink:href="../img/sprites/sprite.svg#product-basket"></use>
 				</svg>
-			</div>
+			</button>
 		</div>
 	</div>
 </div>
